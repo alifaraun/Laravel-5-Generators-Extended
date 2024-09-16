@@ -1,7 +1,10 @@
 {
   "name": "laracasts/generators",
   "description": "Advanced Laravel generators, that include schema information.",
-  "keywords": ["laravel", "generators"],
+  "keywords": [
+    "laravel",
+    "generators"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -14,10 +17,10 @@
     }
   ],
   "require": {
-    "illuminate/support": "~6.0|~7.0|~8.0|~9.0|^10.0"
+    "illuminate/support": "~6.0|~7.0|~8.0|~9.0|^10.0|^11.0"
   },
   "require-dev": {
-    "phpspec/phpspec": "~6.0"
+    "phpspec/phpspec": "~7.0"
   },
   "autoload": {
     "psr-4": {
@@ -25,13 +28,13 @@
     }
   },
   "scripts": {
-      "test": "vendor/bin/phpspec run"
+    "test": "vendor/bin/phpspec run"
   },
   "extra": {
-      "laravel": {
-          "providers": [
-              "Laracasts\\Generators\\GeneratorsServiceProvider"
-          ]
-      }
+    "laravel": {
+      "providers": [
+        "Laracasts\\Generators\\GeneratorsServiceProvider"
+      ]
+    }
   }
 }
