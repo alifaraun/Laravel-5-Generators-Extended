@@ -1,4 +1,4 @@
-# Extended Migration Generators for Laravel 6, 7, 8 and 9
+# Extended Migration Generators for Laravel 6, 7, 8 , 9 , 10 and 11
 
 <a href="https://packagist.org/packages/laracasts/generators" title="Latest Version on Packagist"><img src="https://img.shields.io/packagist/v/laracasts/generators.svg?style=flat-square"></a>
 <a href="https://packagist.org/packages/laracasts/generators" title="Total Downloads"><img src="https://img.shields.io/packagist/dt/laracasts/generators.svg?style=flat-square"></a>
@@ -84,7 +84,8 @@ Using the schema from earlier...
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration {
+return new class extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -111,7 +112,7 @@ class CreateUsersTable extends Migration {
 		Schema::drop('users');
 	}
 
-}
+};
 ```
 
 When generating migrations with schema, the name of your migration (like, "create_users_table") matters. We use it to figure out what you're trying to accomplish. In this case, we began with the "create" keyword, which signals that we want to create a
@@ -131,7 +132,8 @@ Now, notice that we're using the correct Schema methods.
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RemoveUserIdFromPostsTable extends Migration {
+return new class extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -157,7 +159,7 @@ class RemoveUserIdFromPostsTable extends Migration {
 		});
 	}
 
-}
+};
 ```
 
 Here's a few other examples of commands that you might write:
@@ -228,7 +230,8 @@ Here we pass, in any order, the names of the two tables that we need a joining/p
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostTagPivotTable extends Migration {
+return new class extends Migration
+{
 
 	/**
 	 * Run the migrations.
@@ -255,7 +258,7 @@ class CreatePostTagPivotTable extends Migration {
 		Schema::drop('post_tag');
 	}
 
-}
+};
 ```
 
 > Notice that the naming conventions are being followed here, regardless of what order you pass the table names.
