@@ -1,4 +1,4 @@
-# Extended Migration Generators for Laravel 6, 7, 8 , 9 , 10 , 11 and 12
+# Extended Migration Generators for Laravel 6, 7, 8, 9, 10, 11, 12 and 13
 
 <a href="https://packagist.org/packages/laracasts/generators" title="Latest Version on Packagist"><img src="https://img.shields.io/packagist/v/laracasts/generators.svg?style=flat-square"></a>
 <a href="https://packagist.org/packages/laracasts/generators" title="Total Downloads"><img src="https://img.shields.io/packagist/dt/laracasts/generators.svg?style=flat-square"></a>
@@ -29,7 +29,7 @@ Created in 2015 by [Jeffrey Way](https://github.com/jeffreyway) as a natural pro
 Depending on your Laravel version, you should:
 - use [JeffreyWay/Laravel-4-Generators](https://github.com/JeffreyWay/Laravel-4-Generators) for Laravel 4;
 - use [`v1` of this package](https://github.com/laracasts/Laravel-5-Generators-Extended/tree/v1) for Laravel 5.0 - 5.8;
-- use `v2` of this package for Laravel 6-8;
+- use `v2` of this package for Laravel 6-13;
 
 ## Installation
 
